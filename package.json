@@ -1,0 +1,26 @@
+{
+  "name": "employer-tracker",
+  "version": "1.0.0",
+  "description": "## Description This app was made to have an easy access and view to employee information. It was built to being able to manage from departments, to roles, and to employees helping business be easy to organize.",
+  "main": "index.js",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^8.2.4",
+    "mysql2": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tvu328/Employer-Tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tvu328/Employer-Tracker/issues"
+  },
+  "homepage": "https://github.com/tvu328/Employer-Tracker#readme"
+}
