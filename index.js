@@ -125,15 +125,15 @@ function createDept() {
 function createRole() {
     prompt([
         {
-            name: 'name',
-            message: 'What is the role name?'
+            name: 'role',
+            message: 'What is the name of the role?'
         },
         { 
             name: 'salary',
             message: 'What is the salary for this role?'
         },
         {
-            name: 'name',
+            name: 'department id',
             message: 'What department is this role in?'
         }
     ])
@@ -160,7 +160,7 @@ function createEmployee() {
             message: 'What is the name of this employees role?'
         },
         { 
-            name: 'name',
+            name: 'manager',
             message: 'Who is the manager of this employee?'
         }
     ])
