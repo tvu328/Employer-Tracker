@@ -7,18 +7,18 @@ class DB {
 
     getAllDepartments() {
         return this.connection.promise().query(
-            "SELECT department.id, department.name FROM department" 
+            "SELECT department.id, department_name FROM department" 
         )
     }
 
     getAllRoles() {
         return this.connection.promise().query(
-            "SELECT role.id, role.title, role.salary, role_department.id FROM role"
+            "SELECT role.id, role.title, role.salary, department_id FROM role"
         )
     }
     getAllEmployees() {
         return this.connection.promise().query(
-            "SELECT employee.id, employee.first_name, employee.last_name, employee.title, employee_department.id, employee.salary, employee.manager FROM employee" 
+            "SELECT employee.id, first_name, last_name, role_id, employee.salary, manager_id FROM employee" 
         )
     }
     createDept(dept) {
