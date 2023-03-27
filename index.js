@@ -133,7 +133,7 @@ function createRole() {
             message: 'What is the salary for this role?'
         },
         {
-            name: 'department id',
+            name: 'department_id',
             message: 'What department is this role in?'
         }
     ])
@@ -148,20 +148,16 @@ function createRole() {
 function createEmployee() {
     prompt([
         {
-            name: 'first name',
+            name: 'first_name',
             message: 'What is the employees first name?'
         },
         { 
-            name: 'last name',
+            name: 'last_name',
             message: 'What is the employees last name?'
         },
         {
-            name: 'name',
+            name: 'role_id',
             message: 'What is the name of this employees role?'
-        },
-        { 
-            name: 'manager',
-            message: 'Who is the manager of this employee?'
         }
     ])
     .then(res => {
