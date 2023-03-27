@@ -110,7 +110,7 @@ function viewEmployees() {
 function createDept() {
     prompt([
         {
-            name: 'name',
+            name: 'department_name',
             message: 'What is the dept name?'
         }
     ])
@@ -125,7 +125,7 @@ function createDept() {
 function createRole() {
     prompt([
         {
-            name: 'role',
+            name: 'title',
             message: 'What is the name of the role?'
         },
         { 
@@ -157,7 +157,11 @@ function createEmployee() {
         },
         {
             name: 'role_id',
-            message: 'What is the name of this employees role?'
+            message: 'What is the role of this employee?'
+        },
+        {
+            name: 'manager_id',
+            message: "What is your managers id?"
         }
     ])
     .then(res => {
