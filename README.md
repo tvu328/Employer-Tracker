@@ -7,4 +7,4 @@ This app was made to have an easy access and view to employee information. It wa
 Steps required is to install inquirer and the MySQL2 package, along with the console.table package.
 
 ## Usage
-walkthru vid link 
+https://youtu.be/SyAxNuz4Op4

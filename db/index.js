@@ -31,7 +31,7 @@ class DB {
         return this.connection.promise().query("INSERT INTO employee SET ?", employee)
     }
     createExistingEmployee(updatedemployee) {
-        return this.connection.promise().query("INSERT INTO updateEmployee SET ?", updatedemployee)
+        return this.connection.promise().query("UPDATE employee SET role_id = ? WHERE first_name = ?", [updatedemployee.role, updatedemployee.name])
     }
 }
 

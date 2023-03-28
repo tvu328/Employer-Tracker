@@ -84,7 +84,7 @@ function viewDepartments() {
         console.log('you have', departments)
         console.table(departments)
     })
-    .then(() => loadQuestions)
+    .then(() => loadQuestions())
 }
 
 function viewRoles() {
@@ -94,7 +94,7 @@ function viewRoles() {
         console.log('you have', roles)
         console.table(roles)
     })
-    .then(() => loadQuestions)
+    .then(() => loadQuestions())
 }
 
 function viewEmployees() {
@@ -104,7 +104,7 @@ function viewEmployees() {
             console.log('you have', employees)
             console.table(employees)
         })
-        .then(() => loadQuestions)
+        .then(() => loadQuestions())
 }
 
 function createDept() {
